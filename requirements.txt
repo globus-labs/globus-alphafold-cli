@@ -1,0 +1,5 @@
+globus_automate_client
+fair_research_login
+globus_sdk
+typer
+requests
