@@ -6,9 +6,7 @@ The CLI accepts the path to a FASTA file as input before uploading the file to A
 The Alphafold job is dispatched to ALCF resources using funcX and the results are written to Eagle for the user to collect.
 
 To run this example you will need to be a member of the `Globus AlphaFold Group`. 
-This group restricts access to both the Globus endpoint to read and write data and the funcX endpoint deployed at ALCF. 
-
-You can request access `here <https://app.globus.org/groups/2f76ac1f-3e68-11ec-976c-89c391007df5/about>`_ 
+This group restricts access to both the Globus endpoint to read and write data and the funcX endpoint deployed at ALCF. You can request access `here <https://app.globus.org/groups/2f76ac1f-3e68-11ec-976c-89c391007df5/about>`_ 
 
 
 Quickstart

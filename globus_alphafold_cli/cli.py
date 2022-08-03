@@ -12,8 +12,8 @@ from globus_automate_client import create_flows_client
 
 app = typer.Typer()
 
-FLOW_ID = '7c277b80-2cca-42b7-a75d-a970841ee874'
-FLOW_SCOPE = 'https://auth.globus.org/scopes/7c277b80-2cca-42b7-a75d-a970841ee874/flow_7c277b80_2cca_42b7_a75d_a970841ee874_user'
+FLOW_ID = 'a2254233-f695-45a2-b9d0-30ae06dc5344'
+FLOW_SCOPE = 'https://auth.globus.org/scopes/a2254233-f695-45a2-b9d0-30ae06dc5344/flow_a2254233_f695_45a2_b9d0_30ae06dc5344_user'
 
 
 def login():
@@ -97,7 +97,6 @@ def run(fasta: Optional[Path] = typer.Option(None)):
     flow_action = flows_client.run_flow(FLOW_ID, FLOW_SCOPE, flow_input)
     flow_action_id = flow_action['action_id']
     typer.echo(f"Flow started with run id: {flow_action_id}\nMonitor your flow here: https://app.globus.org/runs/{flow_action_id}")
-
 
 
 @app.command()
